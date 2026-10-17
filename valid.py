@@ -7,3 +7,23 @@ def get_integer(prompt):
             return val
         except:
             print("Invalid integer.")
+
+def get_float(prompt):
+    #gets_int
+    val = 0.0
+    while True:
+        try:
+            val = float(input(prompt))
+            return val
+        except:
+            print("Please enter a real number.")
+
+def get_string(prompt):
+
+    val = ""
+    while True:
+        val = input(prompt)
+        if val != "":
+            return val
+        else:
+            print("Invalid string.")
