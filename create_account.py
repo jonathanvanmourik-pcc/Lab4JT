@@ -2,6 +2,7 @@ import valid
 import main
 
 def create_account(account_names, account_balances):
+    #creates a new account
     account_name_val = ""
     account_balance_val = 0
 

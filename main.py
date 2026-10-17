@@ -1,16 +1,45 @@
-#Jonathan van Mourik
-#
-#Module Program
+#******************************************************************************
+# Author:           Jonathan van Mourik
+# Lab:              Lab 4
+# Date:             10/15/26
+# Description:      Basic ATM
+# Input:            int: options selection, str: naming account, float: Changing Balance of account
+# Output:           Str: account name, Floats: account balance
+# Sources:          Lab 4
+#******************************************************************************
+"""
+Welcome to Basic Banking ATM
+1: Check Balance
+2: Make a Deposit
+3: Make a Withdraw
+4: Create an Account
+5: Quit
+
+What would you like to do today?: 4
+
+What would you like to name your account?: Savings
+How much would you like to deposit in Savings?: 100
+
+
+Welcome to Basic Banking ATM
+1: Check Balance
+2: Make a Deposit
+3: Make a Withdraw
+4: Create an Account
+5: Quit
+
+What would you like to do today?: 1
+
+ Your Accounts:
+Checking: 50.20
+Savings: 100.00
+"""
 
 import valid
 import check_balance
 import make_deposit
 import make_withdraw
 import create_account
-
-global account_names, account_balances
-account_names = []
-account_balances = []
 
 def main():
     #main
@@ -46,6 +75,7 @@ def print_menu():
     print("5: Quit")
 
 def print_account_list(account_names):
+    #Prints out the list of accounts
     print("\nYour Accounts: ")
     for i in range(len(account_names)):
         print("{}: {}".format(i, account_names[i]))

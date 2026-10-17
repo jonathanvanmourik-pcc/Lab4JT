@@ -2,6 +2,7 @@ import main
 import valid
 
 def make_withdraw(account_names, account_balances):
+    #removes a balance from an existing account
     account_choice_val = 0
     account_balance_input = 0.0
 

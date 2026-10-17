@@ -2,6 +2,7 @@ import main
 import valid
 
 def make_deposit(account_names, account_balances):
+    #Adds a balance to an existing account
     account_choice_val = 0
     account_balance_input = 0.0
 
